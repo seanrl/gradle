@@ -319,7 +319,6 @@ class BuildProgressCrossVersionSpec extends ToolingApiSpecification {
         resolveCompileA.children == [configureB]
     }
 
-    @TargetGradleVersion(">=3.3 <3.5")
     def "generates events for buildSrc builds"() {
         given:
         buildSrc()
